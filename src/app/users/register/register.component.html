@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="main-container" [formGroup]="formControlGroup">
+    <div class="image-flowers">
+      <img mat-card-lg-image src="../../../assets/registration-form-4.jpg" />
+    </div>
+    <div class="second-container">
+      <mat-card-title>Sign Up</mat-card-title>
+      <mat-chip-list>
+        <mat-icon matPrefix>radio_button_checked</mat-icon>
+        <input
+          matInput
+          placeholder="NAME"
+          formControlName="firstName"
+          class="formControl"
+        />
+      </mat-chip-list>
+      <mat-chip-list>
+        <mat-icon matPrefix>radio_button_unchecked</mat-icon>
+        <input
+          matInput
+          placeholder="E-MAIL"
+          formControlName="email"
+          class="form-control"
+        />
+      </mat-chip-list>
+      <mat-chip-list>
+        <mat-icon matPrefix>radio_button_unchecked</mat-icon>
+        <input
+          matInput
+          placeholder="PASSWORD"
+          formControlName="password"
+          class="form-control"
+        />
+      </mat-chip-list>
+      <div class="terms-conditions">
+        <label>
+          <mat-icon matPrefix>radio_button_checked</mat-icon>
+          <span>I agree all statement in </span
+          ><a href="#">Terms & Conditions</a>
+        </label>
+      </div>
+      <div class="button-sign-up">
+        <button>Sign Up</button>
+        <span class="para">Already Have account?<a href="#">Login</a></span>
+      </div>
+    </div>
+  </div>
+</div>
